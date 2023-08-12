@@ -1,8 +1,8 @@
-/* import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import "./App.css";
 import { uploadFile } from './services/api.js';
 
-function App() {
+function App1() {
   const [file, setFile] = useState('');
   const [result, setResult] = useState('');
 
@@ -46,26 +46,4 @@ function App() {
   );
 }
 
-export default App; */
-
-import React from 'react'
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Login from './Login';
-import Signup from './Signup';
-import App1 from "./app1";
-
-function App() {
-  return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Login />}></Route>
-          <Route path="/signup" element={<Signup />}></Route>
-           <Route path='/app1' element={<App1 />}></Route>
-        </Routes>
-      </Router>
-    </div>
-  )
-}
-
-export default App
+export default App1;
